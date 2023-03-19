@@ -5,19 +5,19 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - main function
- *
- * Return: always 0
+ * main - Entry point
+ *Description - 'get the last digit of a number'
+ * Return: always 0 (Successs)
  */
 int main(void)
 {
 	int n;
-	int m;
+	int ld;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	m = n % 10;
+	ld = n % 10;
 	if (ld > 5)
 		printf("Last digit of %d is %d and is greater than 5", n, ld);
 	else if (ld == 0)
