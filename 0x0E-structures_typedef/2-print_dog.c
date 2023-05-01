@@ -3,8 +3,8 @@
 #include "dog.h"
 
 /**
- * print_dog - prints a struct dog
- * @d: struct dog to print
+ * print_dog - Print a struct dog.
+ * @d: Struct dog print.
  */
 void print_dog(struct dog *d)
 {
@@ -16,5 +16,6 @@ void print_dog(struct dog *d)
 	if (d->owner == NULL)
 		d->owner = "(nil)";
 
-	printf("Name: %s\nAge: %f\nowner: %s\n", d->name, d->age, d->owner);
+	printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
 }
+
